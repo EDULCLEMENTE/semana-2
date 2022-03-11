@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-eddge">
+    <meta name="viewport" content="width =device-width, initial-scale=1.0">
+    <title>PEDIDO</title>
+</head>
+
+<body>
+
+    <h1>REALIZA TU PEDIDO</h1>
+
+    <form action="pedido.js">
+
+        <label for="Nombre">¿Cual es su nombre?</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+        <br><br>
+        <label for="numero">¿Cual es su numero de telefono?</label><br>
+        <input type="number" id="numero" name="numero" placeholder="Numero" maxlength="10">
+        <br><br>
+        <label for="Direccion">¿Cual es su Domicilio?</label><br>
+        <input type="text" id="Direccion" name="Direccion" placeholder="Domicilio">
+        <br><br>
+        <label for="correo">¿Correo electronico?</label><br>
+        <input type="text" id="correo" name="correo" placeholder="E-mail">
+
+        <br>
+
+        <p>¿De que tamaño seria su pastel?</p>
+        <select name="Tamaño" id="tamaño">
+            <option value="Rebanada">Rebanada</option>
+            <option value="pastel Chico">pastel Chico</option>
+            <option value="pastel Mediano">pastel Mediano</option>
+            <option value="pastel Grande">pastel Grande</option>
+        </select>
+        <br>
+
+        <p>¿Eliga el tipo de pan?</p>
+
+        <!--Vainilla-->
+        <input type="checkbox" name="Vainilla" value="Vainilla">
+        <label for="Vainilla">Vainilla</label><br>
+
+        <!--Chocolate-->
+        <input type="checkbox" name="Chocolate" value="Chocolate">
+        <label for="Chocolate">Chocolate</label><br>
+
+        <!--Tres leches-->
+        <input type="checkbox" name="Tres leches" value="Tres leches">
+        <label for="Tres leches">Tres leches</label><br>
+
+        <!--Zanahoria-->
+        <input type="checkbox" name="Zanahoria" value="Zanahoria">
+        <label for="Zanahoria">Zanahoria</label><br>
+
+        <p>¿Eliga sus toppings?</p>
+
+        <!--Rosas-->
+        <input type="checkbox" name="Rosas" value="Rosas">
+        <label for="Rosas">Rosas</label>
+        <input type="number" id="cuantasRosas" name="rosas" placeholder="¿cuantas?"><br>
+        <!--galletas-->
+        <input type="checkbox" name="Galletas" value="Galletas">
+        <label for="Galletas">Galletas</label>
+            <input type="number" id="cuantasgalletas" name="galleta" placeholder="¿cuantas?"><br>
+        <!--moras-->
+        <input type="checkbox" name="Moras" value="Moras">
+        <label for="Moras">Moras</label>
+        <input type="number" id="cuantasmoras" name="moras" placeholder="¿cuantas?"><br>
+        <!--fresas-->
+        <input type="checkbox" name="Fresas" value="Fresas">
+        <label for="Fresas">Fresas</label>
+        <input type="number" id="cuantasfresas" name="fresas" placeholder="¿cuantas?"><br>
+
+        <p>nos podria dar una descripcion de como le gustaria que quedara su pastel</p>
+        <textarea name="descripcion" id="descripcion" cols="50" rows="5"></textarea>
+
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
